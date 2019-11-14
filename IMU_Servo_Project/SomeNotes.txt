@@ -1,3 +1,13 @@
+    This is a Simple Raspberry Pi Project 
+    The aim is to control the rotation of the servo motor according to the Position of the IMU Sensor
+    
+    first I had to to get the values of rotation of the IMU Sensor and because the Readig are somehow noisy and not smooth , the need
+    arrised to use kalman filter to get smoother more accurate results , in this part i used 
+    
+ 
+    
+    Angles Mapping and Servo Calliberation :
+    
     angles range from 20 to 160 correspond to actual angles from 0 to 180
     to convert  angle 20 --> dc=3.4  , angle 160 ---> dc= 11.2 , angle 90 ---> 7.3 # note : it is a non linear transformation
     because we add 2.3 to each dc value ( it varies from a servo to another servo)
