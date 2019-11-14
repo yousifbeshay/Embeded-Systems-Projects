@@ -1,5 +1,5 @@
     This is a Simple Raspberry Pi Project 
-    Link to Video Demo : https://www.youtube.com/watch?v=hTVzFb9crS0 , you can also download
+    Link to Video Demo : https://www.youtube.com/watch?v=BOeqh8H5Dj0&feature=youtu.be, you can also download
     The aim is to control the rotation of the servo motor according to the Position of the IMU Sensor
     
     first I had to to get the values of rotation of the IMU Sensor and because the Readig are somehow noisy and not smooth , the need
