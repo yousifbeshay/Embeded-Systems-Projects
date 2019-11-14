@@ -1,0 +1,12 @@
+    angles range from 20 to 160 correspond to actual angles from 0 to 180
+    to convert  angle 20 --> dc=3.4  , angle 160 ---> dc= 11.2 , angle 90 ---> 7.3 # note : it is a non linear transformation
+    because we add 2.3 to each dc value ( it varies from a servo to another servo)
+    Kalman filter Code gives us angle from -180 to 180 
+    we want angles from -90 to 0 to take values from 20 to 90  ,we will add 90 to negative angles 
+    we will work on angles form -90 to 90 for easier Rotation of the IMU 
+    range1=[-90,0],range2=[20,90] , m1=min1,m2=min2,M1=max1,M2=max2  for example transform -90
+    DesiredAngle= (Current Angle-m1) *((M2-m2)/(M1-m1))+ m2
+    in our case Desired Angle=  -90 -(-90) *(70/90)+ 20 = 90*7/18+20 = 20 which is in the start of (20,90)
+    range1=[0,90], range2=[90,160]
+    we want angles from  0  to 90 to take values from 90 to 160 for example transform 90
+    here we do the same method : Desired = 90-0 *(7/9)+90 = 90*7/18+90 = 160 whihc is in the end of (90, 160)
