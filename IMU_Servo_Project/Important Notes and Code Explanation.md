@@ -36,5 +36,5 @@ This is a Simple Raspberry Pi Project
     
   Finalizing:
     
-    All the heavylifting is over ,  I now just need to check if the angle reading is -ve or =ve then apply my mapping and send the PWM
+    All the heavylifting is over ,  I now just need to check if the angle reading is -ve or +ve then apply my mapping and send the PWM
     signal to the servo to rotate according to the desired angle , we run this logic continously in a while loop .
