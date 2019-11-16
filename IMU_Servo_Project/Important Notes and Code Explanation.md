@@ -4,14 +4,14 @@ This is a Simple Raspberry Pi Project
 
   The aim is to control the rotation of the servo motor according to the Position of the IMU Sensor
     
-    first I had to to get the values of rotation of the IMU Sensor and because the Readig are somehow noisy 
-    and not smooth , the need arrised to use kalman filter to get smoother more accurate results , 
+    first I had to to get the values of rotation of the IMU Sensor and because the Readings are somehow noisy 
+    and not smooth , the need arrised to use kalman filter to get smoother ,more accurate results , 
     in this part i used Kalman-Filter-Python-for-mpu6050-master Library.
     
   Credits to : rocheparadox  
   Library link : https://github.com/rocheparadox/Kalman-Filter-Python-for-mpu6050
     
-  The core logic :
+The core logic :
     
     first i had to caliberate the servo motor in order to be able to fully control it
 
