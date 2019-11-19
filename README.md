@@ -1,2 +1,2 @@
 # Embeded-Systems-Projects
-Contain all Arduino &amp; Rasperry Pi Projects
+ It Contains all Arduino &amp; Rasperry Pi Projects
